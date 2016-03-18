@@ -1,0 +1,29 @@
+[package]
+authors = ["Safe Exchange Developers <team@safex.io>"]
+description = "General purpose library for using and interoperating with Bitcoin and Safe Exchange"
+documentation = "http://safex.io/safex/latest"
+homepage = "http://safex.io"
+license = "GPL-3.0"
+name = "bitcoin"
+readme = "README.md"
+repository = "https://github.com/safex/vote"
+version = "0.1.0"
+
+[lib]
+name = "bitcoin"
+path = "src/lib.rs"
+
+[dependencies]
+byteorder = "0.3"
+jsonrpc = "0.7" # for serde macros
+num = "0.1"
+num_cpus = "0.2"
+rand = "0.3"
+rust-crypto = "0.2"
+rustc-serialize = "0.3"
+serde = "0.6"
+strason = "0.3"
+time = "0.1"
+
+[dependencies.secp256k1]
+git = "https://github.com/safex/rust-secp256k1"
